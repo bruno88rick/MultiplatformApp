@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B68154DC2BF77C9600095C19 /* MultiplatformAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68154DB2BF77C9600095C19 /* MultiplatformAppApp.swift */; };
+		B68154DC2BF77C9600095C19 /* MultiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68154DB2BF77C9600095C19 /* MultiplatformApp.swift */; };
 		B68154DE2BF77C9600095C19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68154DD2BF77C9600095C19 /* ContentView.swift */; };
 		B68154E02BF77C9900095C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68154DF2BF77C9900095C19 /* Assets.xcassets */; };
 		B68154E42BF77C9900095C19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68154E32BF77C9900095C19 /* Preview Assets.xcassets */; };
+		B68154EC2BF7C59B00095C19 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B68154EA2BF7C59B00095C19 /* Main.xcdatamodeld */; };
+		B68154EE2BF7CBB700095C19 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68154ED2BF7CBB700095C19 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B68154D82BF77C9600095C19 /* MultiplatformApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplatformApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B68154DB2BF77C9600095C19 /* MultiplatformAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplatformAppApp.swift; sourceTree = "<group>"; };
+		B68154DB2BF77C9600095C19 /* MultiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplatformApp.swift; sourceTree = "<group>"; };
 		B68154DD2BF77C9600095C19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B68154DF2BF77C9900095C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B68154E12BF77C9900095C19 /* MultiplatformApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultiplatformApp.entitlements; sourceTree = "<group>"; };
 		B68154E32BF77C9900095C19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B68154EB2BF7C59B00095C19 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		B68154ED2BF7CBB700095C19 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B68154EF2BF7DC9B00095C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +57,11 @@
 		B68154DA2BF77C9600095C19 /* MultiplatformApp */ = {
 			isa = PBXGroup;
 			children = (
-				B68154DB2BF77C9600095C19 /* MultiplatformAppApp.swift */,
+				B68154EF2BF7DC9B00095C19 /* Info.plist */,
+				B68154DB2BF77C9600095C19 /* MultiplatformApp.swift */,
+				B68154ED2BF7CBB700095C19 /* DataController.swift */,
 				B68154DD2BF77C9600095C19 /* ContentView.swift */,
+				B68154EA2BF7C59B00095C19 /* Main.xcdatamodeld */,
 				B68154DF2BF77C9900095C19 /* Assets.xcassets */,
 				B68154E12BF77C9900095C19 /* MultiplatformApp.entitlements */,
 				B68154E22BF77C9900095C19 /* Preview Content */,
@@ -139,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68154EC2BF7C59B00095C19 /* Main.xcdatamodeld in Sources */,
+				B68154EE2BF7CBB700095C19 /* DataController.swift in Sources */,
 				B68154DE2BF77C9600095C19 /* ContentView.swift in Sources */,
-				B68154DC2BF77C9600095C19 /* MultiplatformAppApp.swift in Sources */,
+				B68154DC2BF77C9600095C19 /* MultiplatformApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +284,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiplatformApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +323,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultiplatformApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -359,6 +371,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B68154EA2BF7C59B00095C19 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B68154EB2BF7C59B00095C19 /* Main.xcdatamodel */,
+			);
+			currentVersion = B68154EB2BF7C59B00095C19 /* Main.xcdatamodel */;
+			name = Main.xcdatamodeld;
+			path = "/Users/brunooliveira/Documents/Include-Systems/Cursos/100DaysSwiftUI APPs/MultiplatformApp/MultiplatformApp/Main.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B68154D02BF77C9600095C19 /* Project object */;
 }
