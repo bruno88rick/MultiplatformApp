@@ -8,6 +8,8 @@
 import CoreData
 
 class DataController: ObservableObject {
+    @Published var selectedFilter: Filter? = Filter.all
+    
     let container: NSPersistentCloudKitContainer
     
     static var preview: DataController = {
