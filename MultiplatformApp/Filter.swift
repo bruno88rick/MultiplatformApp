@@ -21,6 +21,8 @@ struct Filter: Identifiable, Hashable {
         hasher.combine(id)
     }
     
+
+    /*No contexto da função estática de comparação ﻿==(lhs:rhs: ) em Swift, ﻿lhs e ﻿rhs são abreviações para "left-hand side" (lado esquerdo) e "right-hand side" (lado direito), respectivamente. Esses nomes são frequentemente usados em operadores e funções de comparação para distinguir entre os dois valores que estão sendo comparados.*/
     static func ==(lhs: Filter, rhs: Filter) -> Bool {
         lhs.id == rhs.id
     }
